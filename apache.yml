@@ -9,7 +9,7 @@
     - name: Start Apache server
       service:
         name: httpd
-        state: started
+        state: restarted
         enabled: True
     - name: Deploy static website
       copy:
